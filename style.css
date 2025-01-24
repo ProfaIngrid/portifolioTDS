@@ -1,0 +1,43 @@
+/*padronização para TODOS os elementos*/
+* {
+    color: #ffffff; /*cor da letra(fonte)*/
+    font-family: 'Segoe UI', 'Roboto';
+}
+
+/*estilizando o body*/
+body {
+    background-color: #1a0c2b; /*cor de fundo*/
+}
+
+.titulo-principal {
+    font-size: 100px;
+}
+
+.titulo-principal span{
+    color: #F34DA9;
+}
+
+.container-home {
+    display: flex; /*permite movimentar os elementos*/
+    align-items: center; /*centraliza verticalmente*/
+}
+
+.container-home img {
+    width: 30%; /*largura*/
+    height: 30%; /*altura*/
+}
+
+.titulo-secundario{
+    font-size: 35px;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 25px;
+    border-left: #F34DA9 3px solid;
+    padding: 0 15px;
+}
+
+.menu a:first-child{
+    border: none;
+}
