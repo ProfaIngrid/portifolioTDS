@@ -7,6 +7,11 @@
 /*estilizando o body*/
 body {
     background-color: #1a0c2b; /*cor de fundo*/
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .titulo-principal {
@@ -29,6 +34,10 @@ body {
 
 .titulo-secundario{
     font-size: 35px;
+}
+
+.menu{
+    margin-top: 50px;
 }
 
 .menu a{
