@@ -128,6 +128,28 @@ p {
 .div-habilidades img{
     width: 50%;
 }
+.main-contatos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.div1-contatos h2{
+    font-size: 30px;
+}
+
+.div1-contatos a{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.div1-contatos a:hover{
+    color: #F34DA9;
+}
+
+.icon-contatos, .fa-brands, .fab{
+    font-size: 30px;
+    color: #F34DA9;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
