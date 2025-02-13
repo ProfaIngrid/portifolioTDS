@@ -133,6 +133,13 @@ p {
     justify-content: space-around;
 }
 
+.div1-contatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .div1-contatos h2{
     font-size: 30px;
 }
@@ -151,10 +158,55 @@ p {
 .icon-contatos, .fa-brands, .fab{
     font-size: 40px;
     color: #F34DA9;
+    margin-right: 5px;
 }
 
 .icons-contatos{
+    margin: 20px 0;
+}
 
+.div2-contatos {
+    width: 50%;
+    max-width: 400px;
+}
+
+.div2-contatos h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+.input-grupo {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-grupo label{
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.input-grupo input, .input-grupo textarea{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #1a0c2b;
+    box-sizing: border-box;
+}
+
+.envia-form{
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background-color: #F34DA9;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.envia-form:hover{
+    background-color: #f34da987;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -225,6 +277,34 @@ p {
     }
     .div-habilidades{
         width: 50%;
+    }
+    .main-contatos{
+        flex-direction: column-reverse;
+    }
+    .div2-contatos{
+        width: 100%;
+    }
+    .div1-contatos h2, .div2-contatos h2{
+        font-size: 20px;
+    }
+    .input-grupo{
+        font-size: 14px;
+    }
+    .input-grupo input, .input-grupo textarea, .envia-form{
+        padding: 5px;
+    }
+    .icons-contatos{
+        margin: 0;
+    }
+    .div1-contatos a{
+        font-size: 16px;
+    }
+    .icon-contatos, .fa-brands, .fab{
+        font-size: 30px;
+    }
+    .div1-contatos h2 {
+        margin-top: 30px;
+        margin-bottom: 10px;
     }
 }
 
