@@ -7,6 +7,8 @@ let telefone = document.getElementById("telefone");
 let mensagem = document.getElementById("mensagem");
 let paragrafo = document.getElementById("mensagemObt");
 
+emailjs.init('API_KEY'); //inicializando o emailjs com API_KEY
+ 
 //innerText adiciona um texto no html atraves do js
 // paragrafo.innerText = "Exemplo de texto";
 
@@ -23,5 +25,19 @@ function verificarCampos(event) {
         paragrafo.style.color = "#00ff00";
         paragrafo.style.fontWeight = 'bold';
         paragrafo.style.textAlign= 'center';
-    }
+
+        emailjs.send('service_id', 'template_id', 
+            {
+                to_name: nome.value,
+                to_email: email.value,
+                to_tel: telefone.value,
+                to_message: mensagem.value
+            }
+        );
+
+        nome.value = '';
+        email.value = '';
+        telefone.value = '';
+        mensagem.value = '';
+    };
 };
